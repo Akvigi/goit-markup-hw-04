@@ -138,12 +138,24 @@ body {
   font-size: 14px;
   line-height: 1.14;
   text-decoration: none;
+  flex-direction: row;
+  display: flex;
 }
 
 .linkadress:active,
 .linkadress:focus,
 .linkadress:hover {
   color: var(--active-link-color);
+}
+
+.addres-icon {
+  margin-right: 10px;
+  fill: var(--gray-color);
+}
+
+.addres-icon-smart {
+  justify-content: center;
+  align-items: center;
 }
 
 .linkadress:active .addres-icon,
@@ -297,6 +309,7 @@ p.d {
 
 .link-clientlogo {
   border: 1px solid var(--logo-color);
+  border-radius: 4px;
   padding: 16px 32px;
   display: flex;
   justify-content: center;
@@ -578,12 +591,17 @@ p.g {
   margin-top: 30px;
 }
 
+.img_li_portfolio:focus,
+.img_li_portfolio:hover {
+  box-shadow: 1px 4px 6px 0px #00000029, 0px 4px 4px 0px #0000000f, 0px 1px 1px 0px #0000001f;
+}
+
 h3.portfolio {
   color: var(--black-color);
   font-size: 18px;
   font-weight: 700;
   line-height: calc(36 / 18);
-  padding-top: 20px;
+
   padding-bottom: 0;
   margin-bottom: 0;
 }
@@ -598,4 +616,5 @@ p.portfolio {
 
 .border_img_portfolio {
   border: 1px solid #eeeeee;
+  padding: 20px 24px;
 }
